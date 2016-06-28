@@ -15,7 +15,7 @@ config :peepchat, Peepchat.Endpoint,
   http: [port: {:system, "PORT"}],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   url: [host: "thawing-ridge-72874.herokuapp.com/", port: 443],
-  secret_base_key: System.get_env("SECRET_BASE_KEY")
+  secret_base_key: System.get_env("SECRET_BASE_KEY"),
   cache_static_manifest: "priv/static/manifest.json"
 
 config :peepchat, Peepchat.Repo,
